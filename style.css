@@ -96,6 +96,12 @@ body {
   border-radius: 10px;
 }
 
+.learn-more:hover{
+    background-color: var(--neutral1);
+    border:1.5px solid var(--neutral3);
+    color: var(--neutral3);
+  }
+
 .partners img {
   width: 73px;
 }
@@ -143,6 +149,11 @@ body {
   }
   .learn-more{
     margin-top: 2rem;
+  }
+  .learn-more:hover{
+    background-color: var(--neutral1);
+    border:1.5px solid var(--neutral3);
+    color: var(--neutral3);
   }
   .partners {
     margin: 1rem;
