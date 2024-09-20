@@ -1,0 +1,162 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap");
+:root {
+  --neutral1: hsl(0, 0%, 98%); /* Almost White */
+  --neutral2: hsl(0, 0%, 41%); /* Medium Gray */
+  --neutral3: hsl(0, 0%, 8%); /* Almost Black */
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+}
+
+/* Navigation */
+
+.navbar {
+  color: var(--neutral2);
+}
+
+.navbar-brand img {
+  width: 60px;
+}
+.navlink {
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--neutral2);
+}
+.navlink:hover,
+.navlink:focus {
+  color: var(--neutral3);
+}
+
+.account-btns a {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  color: var(--neutral2);
+  margin: 1rem;
+  font-size: 1em;
+  font-weight: 400;
+}
+.account-btns a:hover,
+.account-btns a:focus {
+  color: var(--neutral3);
+}
+.register a {
+  border: 2px solid var(--neutral2);
+  border-radius: 10px;
+}
+.register a:hover {
+  border-color: var(--neutral3);
+}
+
+/* Intro  */
+.intro {
+  margin-top: 4rem;
+  
+}
+
+/* .right {
+  height: 45%;
+}
+.left {
+  height: 55%;
+} */
+
+
+.col-12 {
+  padding: 1rem;
+}
+.title {
+  color: var(--neutral3);
+  font-weight: 700;
+  font-size: 2em;
+}
+.description{
+  color: var(--neutral2);
+  font-size: 1.2em;
+}
+.learn-more {
+  padding: 0.8rem 1.3rem;
+  outline: none;
+  border: none;
+  background-color: var(--neutral3);
+  color: var(--neutral1);
+  width: 180px;
+  border-radius: 10px;
+}
+
+.partners img {
+  width: 73px;
+}
+/* Media Queries */
+
+@media screen and (min-width: 375px) {
+  .title{
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .title{
+    
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.title{
+  font-size: 3em;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-brand img {
+    width: 80px;
+  }
+
+  .navbar-nav {
+    flex: 2;
+  }
+  .account-btns {
+    flex: 0.7;
+  }
+.intro{
+  padding: 1.3rem;
+  width: 90%;
+  margin:auto;
+}
+  .col-12{
+    margin-top: 2rem;
+  }
+  .learn-more{
+    margin-top: 2rem;
+  }
+  .partners {
+    margin: 1rem;
+  }
+  .partners img{
+    width: 100px;
+  }
+  
+  .title {
+    font-size: 4em;
+  }
+
+  .description{
+    font-size: 1.4em;
+  }
+
+}
